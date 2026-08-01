@@ -1,9 +1,27 @@
 aid: prodly
 name: Prodly
-description: 'Prodly is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Prodly is an end-to-end DevOps platform for Salesforce that version-controls, tests,
+  and deploys both data and metadata between Salesforce orgs. It specializes in the
+  complex relational configuration data behind Salesforce CPQ, Agentforce Revenue
+  Management (ARM), and Field Service Lightning, and adds work-management integrations
+  (Jira, Azure DevOps), version-control integration, scratch-org provisioning, and SOX
+  compliance automation. Prodly exposes automation through first-party CLI plugins on
+  the Salesforce CLI (the paid "Prodly APIs + CLI" add-on) rather than a public REST API.
+  Founded in Palo Alto, CA and backed by Norwest Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/prodly/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/assets/JiAoyhHs6jrvZ9s0Am3V8H3N0c.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- Salesforce
+- DevOps
+- Deployment
+- Data Migration
+- Release Management
+- Version Control
+- CLI
+- Compliance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,40 @@ maintainers:
 common:
 - type: Website
   url: https://prodly.co
+- type: DeveloperPortal
+  url: https://help.prodly.co
+- type: Documentation
+  url: https://help.prodly.co
+- type: Support
+  url: https://success.prodly.co
+- type: Pricing
+  url: https://prodly.co/pricing
+- type: SignUp
+  url: https://prodly.co/free-trial
+- type: GitHubOrganization
+  url: https://github.com/prodly
+- type: StatusPage
+  url: https://status.prodly.co
+- type: Blog
+  url: https://prodly.co/blog
+- type: PrivacyPolicy
+  url: https://prodly.co/legal/privacy-policy
+- type: TermsOfService
+  url: https://prodly.co/legal/terms-of-use
+- type: Compliance
+  url: https://prodly.co/security
+- type: TrustCenter
+  url: security/prodly-trust-center.yml
+- type: Packages
+  url: packages/prodly-packages.yml
+- type: CLI
+  url: cli/prodly-cli.yml
+- type: DomainSecurity
+  url: security/prodly-domain-security.yml
+- type: LLMsTxt
+  url: llms/prodly-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

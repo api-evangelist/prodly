@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/prodly/prodly-sf-cli + https://github.com/prodly/appopsdxcli + https://help.prodly.co/apis-cli
+summary: >-
+  Prodly ships first-party CLI tooling as plugins on top of the Salesforce CLI,
+  used to automate Prodly AppOps relational-data and metadata deployments between
+  Salesforce orgs from CI/CD. Two published plugins exist: the newer sf-based
+  `prodlysfcli` (topic `prodly`) and the sfdx-based `appopsdxcli` (topic `appops`).
+clis:
+- name: prodlysfcli
+  binary: sf
+  topic: prodly
+  install: sf plugins install prodlysfcli
+  package: prodlysfcli
+  docs: https://help.prodly.co/apis-cli
+  notes: >-
+    Provides Prodly application commands on top of the Salesforce (sf) CLI:
+    branch management, change types, check-in / check-out of managed data, and
+    release management (9 commands under the `prodly` topic).
+- name: appopsdxcli
+  binary: sfdx
+  topic: appops
+  install: sfdx plugins:install appopsdxcli
+  package: appopsdxcli
+  docs: https://help.prodly.co/apis-cli
+  commands:
+  - command: sfdx appops:checkin
+    description: Save managed data to a branch associated with a managed instance.
+  - command: sfdx appops:checkout
+    description: Deploy managed data from an associated branch to a managed instance.
+  - command: sfdx appops:deploy
+    description: Launch relational data deployments with simulation and filtering options.
+  - command: sfdx appops:manage
+    description: Manage and list managed instances, versioning, and connections.

@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://registry.npmjs.org (maintainer prodly.npmjs) + https://github.com/prodly
+packages:
+- language: javascript
+  registry: npm
+  name: prodlysfcli
+  url: https://www.npmjs.com/package/prodlysfcli
+  install: sf plugins install prodlysfcli
+  official: true
+  kind: cli-plugin
+  description: Prodly application commands as a plugin on top of the Salesforce (sf) CLI.
+  repo: https://github.com/prodly/prodly-sf-cli
+  latest: 1.6.3
+- language: javascript
+  registry: npm
+  name: appopsdxcli
+  url: https://www.npmjs.com/package/appopsdxcli
+  install: sfdx plugins:install appopsdxcli
+  official: true
+  kind: cli-plugin
+  description: The Prodly AppOps CLI for Salesforce DX (sfdx) — relational data deployments and managed instance operations.
+  repo: https://github.com/prodly/appopsdxcli
+  latest: 1.5.23
