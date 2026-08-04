@@ -2,6 +2,13 @@
   "repo": "prodly",
   "feeds": [
     {
+      "source": "https://status.prodly.co/history.atom",
+      "feed_url": "https://status.prodly.co/history.atom",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://status.prodly.co",
       "feed_url": "https://status.prodly.co/history.atom",
       "title": "",
@@ -9,6 +16,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-07-25T15:00:33Z"
+  "post_count": 23,
+  "fetched": "2026-08-01T15:49:00Z"
 }
